@@ -1,12 +1,13 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Yaldevi as Yaldevi_Colombo } from "next/font/google"
+import { Yaldevi } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 
-const _yaldeviColombo = Yaldevi_Colombo({
-  weight: ["400", "500", "600", "700"],
+const yaldeviColombo = Yaldevi({
+  weight: ["200", "300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  variable: "--font-yaldevi",
 })
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
+      <body className={`${yaldeviColombo.className} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

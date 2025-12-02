@@ -76,8 +76,8 @@
 }
 
 @theme inline {
-  /* Updated font to Yaldevi Colombo */
-  --font-sans: "Yaldevi Colombo", system-ui, sans-serif;
+  /* Set Yaldevi Colombo as the primary font family across all typography */
+  --font-sans: "Yaldevi", system-ui, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
