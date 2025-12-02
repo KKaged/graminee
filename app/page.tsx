@@ -132,7 +132,7 @@ export default function GramineeHomepage() {
               graminēe
             </h3>
             <p className="text-[24px] font-light leading-tight tracking-[0.17em] text-[#595959] text-foreground">
-              生花空
+              生花店
             </p>
           </div>
 
